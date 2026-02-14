@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Log: Mxxi & Yo</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expanded-img">
+    </div>
+
+    <div id="cover-screen">
+        <div class="loader-container">
+            <div class="pixel-spinner">💖</div>
+            <h1 class="glitch-text" data-text="MXXI.EXE">MXXI.EXE</h1>
+            <p>Cargando archivos .PNG de amistad...</p>
+            <button class="btn-retro" id="btnAbrir">➤ INICIAR SISTEMA</button>
+            <p class="tiny-text">Sound: ON 🔊</p>
+        </div>
+    </div>
+
+    <div class="desktop">
+        
+        <div class="top-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="bar-title">♥ San_Valentin_Special_Mxxi.html</span>
+        </div>
+
+        <div class="window-content">
+            
+            <section id="tab-perfil" class="tab active">
+                <div class="profile-layout">
+                    <div class="polaroid-main">
+                        <img src="Portada.png" alt="Mxxi" onerror="this.src='https://placehold.co/400x300?text=Error+Portada.png'">
+                        <span class="tape"></span>
+                    </div>
+                    
+                    <div class="rpg-stats">
+                        <h3>PLAYER: MXXI (Enana)</h3>
+                        <div class="stat-row">
+                            <span>Clase:</span> <span>Duo Imbatible</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Nivel:</span> <span>Amistad Infinita</span>
+                        </div>
+                        <div class="stat-bar-container">
+                            <span>Celos (Yo)</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="stat-bar-container">
+                            <span>Protección</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="stat-bar-container">
+                            <span>Valor</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 100%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="retro-box">
+                    <p class="typing-effect">"Aunque sea un celoso, siempre te voy a cuidar." 🛡️</p>
+                </div>
+            </section>
+
+            <section id="tab-carta" class="tab">
+                <div class="notepad">
+                    <div class="notepad-header">carta_sincera.txt</div>
+                    <div class="notepad-body">
+                        <p id="typewriter-text"></p> </div>
+                </div>
+                <div id="raw-text" style="display:none;">
+Hola Mxxi, feliz día de la amistad. ✨
+
+Quería decirte que te agradezco mucho por estar ahí. Sé que eres una chica increíble y me haces sentir muy bien. Ya sabes que soy un poco celoso jaja, pero es porque te quiero cuidar y proteger siempre. 🛡️
+
+A veces me da miedo porque siempre terminan lastimándome, y sé que en algún momento quizás tengamos peleas o incluso dejemos de hablarnos por semanas o meses... pero quiero que recuerdes algo: yo siempre te voy a responder y te escribiré de la misma manera que el día que te conocí. ⚡
+
+Ya formas parte de mi vida y siempre te tendré como un bello recuerdo. Estaré contigo hasta donde el tiempo quiera y tú lo permitas. ¡Te aprecio demasiado!
+                </div>
+            </section>
+
+            <section id="tab-galeria" class="tab">
+                <h3 class="pixel-title">📂 /Recuerdos/Fotos.png</h3>
+                <div class="gallery-scroll">
+                    <div class="photo-card"><img src="foto1.png" onerror="this.src='https://placehold.co/150?text=foto1.png'"></div>
+                    <div class="photo-card"><img src="foto2.png" onerror="this.src='https://placehold.co/150?text=foto2.png'"></div>
+                    <div class="photo-card"><img src="foto3.png" onerror="this.src='https://placehold.co/150?text=foto3.png'"></div>
+                    <div class="photo-card"><img src="foto4.png" onerror="this.src='https://placehold.co/150?text=foto4.png'"></div>
+                    <div class="photo-card"><img src="foto5.png" onerror="this.src='https://placehold.co/150?text=foto5.png'"></div>
+                    <div class="photo-card"><img src="foto6.png" onerror="this.src='https://placehold.co/150?text=foto6.png'"></div>
+                    <div class="photo-card"><img src="foto7.png" onerror="this.src='https://placehold.co/150?text=foto7.png'"></div>
+                    <div class="photo-card"><img src="foto8.png" onerror="this.src='https://placehold.co/150?text=foto8.png'"></div>
+                </div>
+                <p class="hint">Desliza para ver más recuerdos >>></p>
+            </section>
+
+            <section id="tab-story" class="tab">
+                <h3 class="pixel-title">💾 System_Logs.dat</h3>
+                
+                <div class="file-folder">
+                    <span class="icon">📱</span>
+                    <div class="folder-info">
+                        <strong>Origen_TikTok.log</strong>
+                        <p>Apareciste de la nada y conectamos al toque. En un mundo donde todo es falso, encontrarte fue real.</p>
+                    </div>
+                </div>
+
+                <div class="file-folder">
+                    <span class="icon">📏</span>
+                    <div class="folder-info">
+                        <strong>User_Nickname.cfg</strong>
+                        <p>Estado: Enana preferida. Eres una chica de oro, nunca dejes que nadie te haga creer lo contrario.</p>
+                    </div>
+                </div>
+
+                <div class="file-folder">
+                    <span class="icon">♓</span>
+                    <div class="folder-info">
+                        <strong>Piscis_Mood.exe</strong>
+                        <p>22 de Febrero. Ya casi llega tu día. Tan distraída pero tan especial. ✨</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-final" class="tab">
+                <div class="final-card">
+                    <div class="photo-frame-simple">
+                        <img src="foto12.png" alt="Final" onerror="this.src='https://placehold.co/400x300?text=foto12.png'">
+                    </div>
+                    
+                    <div class="console-text">
+                        <p>> Bueno amiguita Mxxi...</p>
+                        <p>> Se me complicó un poco terminarlo jaja, quería que fuera perfecto. Si tuviera más tiempo habría puesto más fotos y más cosas jeje.</p>
+                        <p>> Pero lo importante es que sepas que aquí tienes a alguien que te cuidará siempre.</p>
+                        <p>> Sin máscaras, siempre seré el mismo para ti.</p>
+                        <p class="blink">> ¡Feliz día de la amistad, enana! ;)</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="dock">
+            <button class="dock-btn active" data-target="tab-perfil">👤<span class="tooltip">Perfil</span></button>
+            <button class="dock-btn" data-target="tab-carta">📝<span class="tooltip">Mensaje</span></button>
+            <button class="dock-btn" data-target="tab-galeria">📸<span class="tooltip">Fotos</span></button>
+            <button class="dock-btn" data-target="tab-story">💾<span class="tooltip">Logs</span></button>
+            <button class="dock-btn" data-target="tab-final">✨<span class="tooltip">Final</span></button>
+        </div>
+
+    </div>
+
+    <audio id="audioPlayer" loop><source src="musica.mp3" type="audio/mpeg"></audio>
+    <audio id="popSound"><source src="pop.mp3" type="audio/mpeg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
